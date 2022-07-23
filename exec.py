@@ -50,7 +50,13 @@ def print_cmd(result):
         init()
     
     elif escolha == 2:
-        print('primos: ' + str(result.values()))
+        apenas_primos = []
+        
+        for primos in result.values():
+            apenas_primos.append(primos)
+
+        print(apenas_primos)
+        init()
 
 def init():
     numero_a_ser_fatorado = int(input('Digite o numero a ser fatorado: '))
